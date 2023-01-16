@@ -83,7 +83,8 @@ a {
   margin-left: 80px;
   transition: 0.2s all ease-in-out;
 }
-.collapsible {
+/* collapsible menu */
+.collapsible-icon {
   display: none;
 }
 
@@ -168,9 +169,6 @@ a {
   }
   .menu a {
     padding-bottom: 5px;
-  }
-  .collapsible {
-    display: flex;
   }
 
   /* footer */
