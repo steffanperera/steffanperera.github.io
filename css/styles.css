@@ -1,0 +1,171 @@
+/* Designed and developed by Steffan Perera - All Rights Reserved 2023 */
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  color: black;
+  background: #e5e4e1;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  cursor: none;
+  -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+br::selection {
+  background: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: none;
+}
+
+/* cursor */
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform, border;
+  transform-origin: 100% 100%;
+  backdrop-filter: invert(1);
+}
+.linkgrow {
+  transform: scale(2);
+  border: none;
+  backdrop-filter: invert(1);
+}
+
+/* nav */
+
+.nav {
+  width: 94%;
+  height: 8vw;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 14px;
+}
+.title {
+  text-align: left;
+}
+.title p {
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  height: 28px;
+}
+.menu a {
+  margin-left: 80px;
+  transition: 0.2s all ease-in-out;
+}
+
+/* footer */
+.footer {
+  width: 94%;
+  height: 8vw;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 28px;
+}
+.social a {
+  margin-right: 80px;
+  transition: 0.2s all ease-in-out;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 50%;
+}
+.info p {
+  margin: 0;
+  padding: 0;
+}
+
+/* -- responsive design -- */
+
+/* max width: 1800px */
+@media only screen and (min-width: 1800px) {
+  /* nav */
+  .nav {
+    height: 120px;
+    font-size: 16px;
+  }
+
+  /* footer */
+  .footer {
+    height: 120px;
+    font-size: 16px;
+  }
+}
+
+/* max width: 750px */
+@media only screen and (max-width: 750px) {
+  /* empty */
+}
+
+/* mobile: 0px - 650px; */
+@media only screen and (max-width: 650px) {
+  /* footer */
+  .footer {
+    margin: auto;
+    width: 94%;
+    height: 30vw;
+    flex-direction: column;
+    margin-top: 10vw;
+    margin-bottom: 14vw;
+    background-color: aqua;
+    font-size: 14px;
+  }
+  .social {
+    width: 20vw;
+    flex-direction: column;
+    order: 2;
+  }
+  .social a {
+    padding-bottom: 5px;
+  }
+  .info {
+    width: 100%;
+    height: 0vw;
+    flex-direction: column;
+  }
+  .info p {
+    padding-bottom: 5px;
+  }
+}
