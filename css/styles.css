@@ -149,7 +149,7 @@ a {
     margin: auto;
     width: 94%;
     height: 30vw;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 10vw;
     margin-bottom: 14vw;
     background-color: aqua;
@@ -163,13 +163,20 @@ a {
     padding-bottom: 5px;
   }
   .menu {
+    background-color: blueviolet;
+
     position: absolute;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 94%;
     height: 92vh;
     top: 8vh;
-    right: 0;
   }
   .menu a {
-    padding-bottom: 5px;
+    padding-bottom: 40px;
+    margin-left: 40px;
   }
 
   /* footer */
