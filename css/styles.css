@@ -79,18 +79,12 @@ a {
   text-align: right;
   height: 28px;
 }
-.menu a {
+.menu > a {
   margin-left: 80px;
   transition: 0.2s all ease-in-out;
 }
 .hidden-link {
   display: none;
-}
-/* collapsible menu */
-.collapsible-icon {
-  display: none;
-  height: 14px;
-  width: 14px;
 }
 
 /* footer */
@@ -152,6 +146,9 @@ a {
   body {
     overflow-x: hidden;
   }
+  .cursor {
+    display: none;
+  }
 
   /* nav */
   .nav {
@@ -164,41 +161,18 @@ a {
     font-size: 16px;
   }
   .title {
-    width: 100%;
-    height: 0vw;
-  }
-  .title p {
-    padding-bottom: 5px;
+    display: none;
   }
   .menu {
-    position: absolute;
-    background-color: #d3d3d3;
-    padding-top: 10vh;
-    flex-direction: column;
-    align-items: flex-start;
+    font-size: 16px;
     width: 100%;
-    height: 88vh;
-    top: 12vh;
-    opacity: 0;
-    /* collapsible menu animation */
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    justify-content: space-between;
   }
-  .menu a {
-    padding-bottom: 60px;
-    margin-left: 18vw;
+  .menu > a {
+    margin-left: 0;
   }
   .hidden-link {
-    display: flex;
-  }
-  .collapsible-icon {
-    display: flex;
-  }
-  /* collapsible menu active */
-  .collapsible-menu-active {
-    transform: translateX(0%);
-
-    opacity: 100;
+    display: block;
   }
 
   /* footer */
