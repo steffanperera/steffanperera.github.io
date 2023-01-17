@@ -173,6 +173,7 @@ a {
   }
   .hidden-link {
     display: block;
+    font-size: 16;
   }
 
   /* footer */
