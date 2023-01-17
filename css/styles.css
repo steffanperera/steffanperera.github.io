@@ -178,8 +178,8 @@ a {
     flex-direction: column;
     align-items: flex-start;
     width: 94%;
-    height: 92vh;
-    top: 8vh;
+    height: 88vh;
+    top: 12vh;
     background-color: #e5e4e1;
   }
   .collapsible-menu > .menu a {
