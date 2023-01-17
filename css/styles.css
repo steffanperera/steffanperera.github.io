@@ -83,12 +83,14 @@ a {
   margin-left: 80px;
   transition: 0.2s all ease-in-out;
 }
+.hidden-link {
+  display: none;
+}
 /* collapsible menu */
 .collapsible-icon {
   display: none;
-}
-.collapsible-menu {
-  display: none;
+  height: 14px;
+  width: 14px;
 }
 
 /* footer */
@@ -147,15 +149,18 @@ a {
 
 /* mobile: 0px - 650px; */
 @media only screen and (max-width: 650px) {
+  body {
+    overflow-x: hidden;
+  }
+
   /* nav */
   .nav {
     margin: auto;
     width: 94%;
     height: 30vw;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 10vw;
     margin-bottom: 14vw;
-    background-color: aqua;
     font-size: 16px;
   }
   .title {
@@ -166,25 +171,33 @@ a {
     padding-bottom: 5px;
   }
   .menu {
-    display: none;
-  }
-  .collapsible-menu {
-    display: flex;
-  }
-  .collapsible-menu > .menu {
-    display: flex;
     position: absolute;
+    background-color: #e5e4e1;
     padding-top: 40px;
     flex-direction: column;
     align-items: flex-start;
     width: 94%;
     height: 88vh;
     top: 12vh;
-    background-color: #e5e4e1;
+    opacity: 0;
+    /* collapsible menu animation */
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
   }
-  .collapsible-menu > .menu a {
+  .menu a {
     padding-bottom: 60px;
-    margin-left: 40px;
+    margin-left: 18vw;
+  }
+  .hidden-link {
+    display: flex;
+  }
+  .collapsible-icon {
+    display: flex;
+  }
+  /* collapsible menu active */
+  .collapsible-menu-active {
+    transform: translateX(0%);
+    opacity: 100;
   }
 
   /* footer */
@@ -195,7 +208,6 @@ a {
     flex-direction: column;
     margin-top: 10vw;
     margin-bottom: 14vw;
-    background-color: aqua;
     font-size: 16px;
   }
   .social {
