@@ -93,7 +93,8 @@ a {
 
   /* nav */
   .nav {
-    padding: 26px 0;
+    padding-top: 34px;
+    padding-bottom: 26px;
   }
   .nav-content {
     width: 98%;
