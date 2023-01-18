@@ -14,7 +14,7 @@ body {
   padding: 0;
   width: 100%;
   height: auto;
-  color: #0069e3;
+  color: black;
   background: #e5e4e1;
   font-family: "JetBrains Mono", monospace;
   font-weight: 500;
@@ -57,53 +57,39 @@ a {
 /* nav */
 .nav {
   width: 94%;
+  height: 8vw;
   margin: auto;
   margin-top: 40px;
-  font-size: 14px;
-}
-.nav-content {
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  font-size: 14px;
 }
-.nav-content > .title {
+.title {
   text-align: left;
 }
-.nav-content > .title > p {
+.title > p {
   margin: 0;
   padding: 0;
 }
-.nav-content > .menu {
+.menu {
   display: flex;
   flex-direction: row;
   text-align: right;
   height: 28px;
 }
-.nav-content > .menu > a {
+.menu > a {
   margin-left: 80px;
   transition: 0.2s all ease-in-out;
-}
-.nav-hr {
-  background-color: #0069e3;
-  height: 3px;
-  margin-top: 20px;
-}
-
-/* bio */
-.bio {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 94%;
-  height: 79vh;
-  margin: auto;
-  font-size: 50px;
 }
 
 /* footer */
 .footer {
   width: 94%;
+  height: 8vw;
   margin: auto;
+  margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: row;
@@ -136,11 +122,13 @@ a {
 @media only screen and (min-width: 1800px) {
   /* nav */
   .nav {
+    height: 120px;
     font-size: 16px;
   }
 
   /* footer */
   .footer {
+    height: 120px;
     font-size: 16px;
   }
 }
@@ -163,35 +151,28 @@ a {
   .nav {
     margin: auto;
     width: 94%;
+    height: 30vw;
+    flex-direction: row;
     margin-top: 10vw;
-    margin-bottom: 10vw;
+    margin-bottom: 14vw;
     font-size: 16px;
   }
-  .nav-content {
-    flex-direction: row;
-    padding-bottom: 20px;
-  }
-  .nav-content > .title {
+  .title {
     width: 100%;
-    height: 0;
+    height: 0vw;
   }
-  .nav-content > .menu {
+  .menu {
     display: none;
-  }
-
-  /* bio */
-  .bio {
-    font-size: 5vh;
   }
 
   /* footer */
   .footer {
     margin: auto;
     width: 94%;
-    height: 18vw;
+    height: 30vw;
     flex-direction: column;
     margin-top: 10vw;
-    margin-bottom: 10vw;
+    margin-bottom: 14vw;
     font-size: 16px;
   }
   .social {
