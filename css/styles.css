@@ -64,8 +64,14 @@ a {
   margin-left: 80px;
 }
 
+.bio {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  margin: auto;
+}
 .bio > p {
-  font-size: 200px;
+  font-size: 50px;
 }
 
 /* -- responsive-design -- */
@@ -93,11 +99,7 @@ a {
 
   /* nav */
   .nav {
-    padding-top: 34px;
-    padding-bottom: 26px;
-  }
-  .nav-content {
-    width: 98%;
+    padding: 26px 0;
   }
   .nav-content > .menu {
     display: none;
