@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background: #0b0b0b;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+br::selection {
+  background: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content {
+  width: 94vw;
+  margin: auto;
+}
+
+/* nav */
+.nav {
+  width: 100%;
+  height: 32px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+}
+
+.nav p {
+  color: #ff5100;
+  font-size: 16px;
+  width: auto;
+  padding: 10px;
+  margin-left: -10px;
+  transition: 0.2s all ease-in-out;
+}
+
+.nav a {
+  color: #efeef3;
+  font-size: 14px;
+  width: auto;
+  padding: 10px;
+  margin-left: -10px;
+  transition: 0.2s all ease-in-out;
+}
+.nav a:hover {
+  color: #ff5100;
+}
+.nav a::selection {
+  color: #ff5100;
+}
+.nav-home,
+.nav-projects,
+.nav-about,
+.nav-contact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-home-mobile a {
+  color: #ff5100;
+}
+.nav-home-mobile {
+  display: none;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+/* body */
+.container {
+  width: 100%;
+  height: auto;
+  background: #0b0b0b;
+  margin: auto;
+  margin-top: 60px;
+  position: relative;
+}
+.container p {
+  color: #efeef3;
+}
+
+.emblem {
+  position: absolute;
+  width: 14vw;
+  height: 14vw;
+  /* background: url(https://mortnsn.com/projects/mortnsn/smiley.svg); */
+  background: url(/assets/svg/emblem.svg);
+  background-size: cover;
+  background-position: center;
+
+  float: right;
+  top: -40px;
+  right: -20px;
+  -webkit-animation: rotate-center 18s linear reverse infinite;
+  animation: rotate-center 18s linear reverse infinite;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.image {
+  margin: auto;
+  margin-top: -7vw;
+  width: 40vw;
+  height: 50vw;
+  background: url(https://mortnsn.com/projects/mortnsn/KYTY3970.jpg);
+  background-size: cover;
+  background-position: left;
+  transform: rotate(2deg);
+  z-index: 0;
+}
+
+/* bio */
+.bio {
+  height: auto;
+  padding-top: 3vw;
+  padding-bottom: 0vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  transition: 0.2s all ease-in-out;
+}
+.bio p {
+  margin: auto;
+  font-size: 4vw;
+}
+
+/* talk */
+.talk {
+  height: auto;
+  padding-bottom: 7vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  transition: 0.2s all ease-in-out;
+}
+.talk p {
+  margin: auto;
+  font-size: 4vw;
+}
+
+/* footer */
+.footer {
+  width: 94%;
+  height: 8vw;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  color: #ff5100;
+}
+
+.footer a:hover {
+  color: #efeef3;
+}
+
+.footer a::selection {
+  color: #efeef3;
+}
+.footer p::selection {
+  color: #efeef3;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 28px;
+}
+
+.social a {
+  margin-right: 80px;
+  transition: 0.2s all ease-in-out;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 50%;
+}
+.info p {
+  margin: 0;
+  padding: 0;
+  color: #ff5100;
+}
+
+/* max width = 1800px */
+@media only screen and (min-width: 1800px) {
+  .content {
+    max-width: 1700px;
+  }
+  /* .container {
+    border-radius: 60px 60px 60px 60px;
+  } */
+  .container p {
+    font-size: max(170px);
+  }
+  .nav a {
+    font-size: 16px;
+  }
+  .bio p {
+    font-size: max(76px);
+  }
+  .talk p {
+    font-size: max(76px);
+  }
+
+  .emblem {
+    width: 300px;
+    height: 300px;
+  }
+  .bio {
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .talk {
+    padding-bottom: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .footer {
+    height: 120px;
+    font-size: 16px;
+  }
+}
+
+/* max width = 750px */
+@media only screen and (max-width: 750px) {
+  .content {
+    width: 100%;
+    overflow: hidden;
+  }
+  .container {
+    height: auto;
+    /* border-radius: 6vw 6vw 6vw 6vw; */
+    margin-top: 12vw;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+  }
+  .emblem {
+    width: 30vw;
+    height: 30vw;
+    right: 8px;
+    top: -20px;
+  }
+  .nav {
+    width: 94%;
+  }
+  .nav a {
+    font-size: 14px;
+  }
+  .bio {
+    margin-top: 0vw;
+  }
+  .bio p {
+    font-size: 5vw;
+  }
+  .talk {
+    margin-top: 0vw;
+  }
+  .talk p {
+    font-size: 5vw;
+  }
+  .social a {
+    margin-right: 60px;
+  }
+}
+
+/* 0px - 650px */
+@media only screen and (max-width: 650px) {
+  /* nav */
+  .nav {
+    width: 90%;
+    justify-content: space-between;
+  }
+  .nav-home {
+    display: none;
+  }
+  .nav-home-mobile {
+    display: inherit;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .nav-home,
+  .nav-projects,
+  .nav-about,
+  .nav-contact {
+    width: auto;
+  }
+  .nav a {
+    margin-left: 0px;
+    font-size: 22px;
+  }
+  /* NAV */
+
+  .bio {
+    margin-top: 4vw;
+  }
+  .bio p {
+    font-size: 7.5vw;
+    font-weight: 400;
+  }
+  .talk {
+    margin-top: 0vw;
+  }
+  .talk p {
+    font-size: 7.5vw;
+    font-weight: 400;
+  }
+
+  /* footer mobile */
+  .footer {
+    margin: auto;
+    width: 94vw;
+    height: 30vw;
+    flex-direction: column;
+    margin-top: 10vw;
+    margin-bottom: 14vw;
+  }
+  .social {
+    width: 20vw;
+    flex-direction: column;
+    order: 2;
+  }
+  .social a {
+    /* margin-right: 32px; */
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+  .info {
+    width: 100%;
+    height: 0vw;
+    flex-direction: column;
+  }
+  .info p {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+}
