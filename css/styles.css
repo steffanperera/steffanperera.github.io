@@ -1,4 +1,4 @@
-/* Designed and developed by Steffan Perera - All Rights Reserved 2023 */
+/* Designed and Developed by Steffan Perera - All Rights Reserved 2023 */
 
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
 
@@ -69,7 +69,7 @@ a {
 .title {
   text-align: left;
 }
-.title p {
+.title > p {
   margin: 0;
   padding: 0;
 }
@@ -82,9 +82,6 @@ a {
 .menu > a {
   margin-left: 80px;
   transition: 0.2s all ease-in-out;
-}
-.hidden-link {
-  display: none;
 }
 
 /* footer */
@@ -104,7 +101,7 @@ a {
   width: 50%;
   height: 28px;
 }
-.social a {
+.social > a {
   margin-right: 80px;
   transition: 0.2s all ease-in-out;
 }
@@ -114,7 +111,7 @@ a {
   text-align: right;
   width: 50%;
 }
-.info p {
+.info > p {
   margin: 0;
   padding: 0;
 }
@@ -161,18 +158,11 @@ a {
     font-size: 16px;
   }
   .title {
-    display: none;
+    width: 100%;
+    height: 0vw;
   }
   .menu {
-    font-size: 16px;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .menu > a {
-    margin-left: 0;
-  }
-  .hidden-link {
-    display: block;
+    display: none;
   }
 
   /* footer */
@@ -190,7 +180,7 @@ a {
     flex-direction: column;
     order: 2;
   }
-  .social a {
+  .social > a {
     padding-bottom: 5px;
   }
   .info {
@@ -198,7 +188,7 @@ a {
     height: 0vw;
     flex-direction: column;
   }
-  .info p {
+  .info > p {
     padding-bottom: 5px;
   }
 }
