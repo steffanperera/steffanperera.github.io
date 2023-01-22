@@ -1,6 +1,6 @@
 /* Designed and Developed by Steffan Perera - All Rights Reserved 2023 */
 
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap");
 
 * {
   margin: 0;
@@ -14,7 +14,7 @@ body {
   padding: 0;
   width: 100%;
   font-family: "JetBrains Mono", monospace;
-  font-weight: 400;
+  font-weight: 300;
   color: #e5e4e1;
   background: black;
   cursor: none;
