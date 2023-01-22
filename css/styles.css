@@ -30,6 +30,7 @@ br::selection {
 p,
 a {
   font-size: 14px;
+  font-style: italic;
 }
 a {
   color: inherit;
@@ -94,7 +95,7 @@ a {
   margin-top: 30vh;
 }
 .bio > p {
-  font-size: 50px;
+  font-size: 52px;
 }
 
 /* -- responsive-design -- */
