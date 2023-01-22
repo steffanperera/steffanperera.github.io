@@ -38,6 +38,11 @@ a {
   cursor: none;
 }
 
+/* universal-selectors */
+#section {
+  width: 80%;
+}
+
 /* cursor */
 .cursor {
   width: 3rem;
@@ -90,28 +95,71 @@ a {
 .bio {
   display: flex;
   flex-direction: column;
-  width: 70%;
   margin: auto;
   margin-top: 30vh;
+  margin-bottom: 30vh;
 }
 .bio > p {
   font-size: 52px;
+  font-weight: 500;
+}
+
+/* services */
+.services {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.services-content {
+  display: flex;
+  flex-direction: column;
+}
+.services-main {
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.services-text {
+  margin-top: 40px;
 }
 
 /* -- responsive-design -- */
 
 /* max-width: 1800px */
 @media only screen and (min-width: 1800px) {
+  /* universal-selectors */
+  #section {
+    width: 70%;
+  }
+
+  /* bio */
+  .bio {
+    margin-top: 36vh;
+    margin-bottom: 36vh;
+  }
 }
 
 /* max-width: 750px */
 @media only screen and (max-width: 750px) {
+  /* universal-selectors */
+  #section {
+    width: 90%;
+  }
+
+  .bio > p {
+    font-size: 42px;
+  }
 }
 
 /* mobile: 0px - 650px */
 @media only screen and (max-width: 650px) {
   body {
     overflow-x: hidden;
+  }
+
+  /* universal-selectors */
+  #section {
+    width: 94%;
   }
 
   .cursor {
@@ -128,9 +176,9 @@ a {
   .bio {
     display: flex;
     flex-direction: column;
-    width: 94%;
     margin: auto;
-    margin-top: 16vh;
+    margin-top: 18vh;
+    margin-bottom: 18vh;
   }
   .bio > p {
     font-size: 4vh;
